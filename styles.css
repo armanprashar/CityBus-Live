@@ -1,0 +1,42 @@
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f3f4f6;
+}
+
+.screen-container {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+}
+
+.screen-container.active {
+    display: flex;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    fill: #6b7280;
+}
+
+.nav-item.active .nav-icon {
+    fill: #4c1d95;
+}
+
+.nav-item.active .nav-text {
+    color: #4c1d95;
+    font-weight: 600;
+}
+
+/* Custom styles for crowd report selection */
+.crowd-option {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.crowd-option.selected {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
